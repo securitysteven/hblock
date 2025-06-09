@@ -77,7 +77,7 @@ jobs:
     container: "docker.io/fedora:latest"
     steps:
       - name: "Install packages"
-        run: "dnf install -y ca-certificates curl file findutils idn2 make"
+        run: "dnf install -y ca-certificates curl file findutils gawk idn2 make"
       - name: "Checkout project"
         uses: "actions/checkout@v4"
       - name: "Test project"
